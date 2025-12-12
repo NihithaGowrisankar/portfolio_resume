@@ -17,6 +17,7 @@
             background-color: #f5f7fa;
             color: #333;
             line-height: 1.6;
+            font-size: 18px; /* Increased base font size */
         }
         
         .container {
@@ -42,7 +43,7 @@
         }
         
         .logo {
-            font-size: 24px;
+            font-size: 28px; /* Increased from 24px */
             font-weight: 700;
             color: #2c3e50;
         }
@@ -64,7 +65,7 @@
             text-decoration: none;
             color: #555;
             font-weight: 600;
-            font-size: 16px;
+            font-size: 18px; /* Increased from 16px */
             transition: color 0.3s;
             padding: 5px 0;
             position: relative;
@@ -91,78 +92,111 @@
         
         .mobile-menu-btn {
             display: none;
-            font-size: 24px;
+            font-size: 28px; /* Increased from 24px */
             cursor: pointer;
             color: #2c3e50;
         }
         
-        /* Hero Section */
+        /* Hero Section - Updated Layout */
         .hero {
             padding: 80px 0;
             background: linear-gradient(135deg, #f5f7fa 0%, #e4edf5 100%);
-            text-align: center;
         }
         
         .hero-content {
-            max-width: 800px;
-            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 50px;
+            align-items: center;
         }
         
-        /* Your Profile Photo - Properly Styled */
+        /* Profile Photo on Left Side */
+        .profile-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
         .profile-photo {
-            width: 250px;
-            height: 250px;
+            width: 300px; /* Increased from 250px */
+            height: 300px; /* Increased from 250px */
             border-radius: 50%;
             object-fit: cover;
             border: 6px solid #fff;
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
             margin-bottom: 30px;
             display: block;
-            margin-left: auto;
-            margin-right: auto;
             background-color: #f0f0f0; /* Fallback background */
         }
         
         /* Alternative: Rectangle Style */
         .profile-photo-rectangle {
-            width: 220px;
-            height: 280px;
+            width: 280px; /* Increased from 220px */
+            height: 350px; /* Increased from 280px */
             object-fit: cover;
             border-radius: 10px;
             border: 5px solid #fff;
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
             margin-bottom: 30px;
             display: block;
-            margin-left: auto;
-            margin-right: auto;
+        }
+        
+        .hero-text {
+            text-align: left;
         }
         
         .hero h1 {
-            font-size: 42px;
+            font-size: 48px; /* Increased from 42px */
             color: #2c3e50;
             margin-bottom: 10px;
         }
         
         .hero h2 {
-            font-size: 24px;
+            font-size: 28px; /* Increased from 24px */
             color: #3498db;
             font-weight: 500;
             margin-bottom: 30px;
         }
         
         .hero p {
-            font-size: 18px;
+            font-size: 20px; /* Increased from 18px */
             color: #666;
-            margin-bottom: 40px;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
+            margin-bottom: 30px;
+        }
+        
+        /* Career Objectives Box */
+        .career-objectives {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 30px 0;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            border-left: 5px solid #3498db;
+        }
+        
+        .career-objectives h3 {
+            color: #2c3e50;
+            font-size: 24px; /* Increased font size */
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .career-objectives h3 i {
+            color: #3498db;
+        }
+        
+        .career-objectives p {
+            font-size: 18px; /* Increased font size */
+            color: #555;
+            line-height: 1.8;
         }
         
         /* Download & View Buttons */
         .button-container {
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             gap: 20px;
             margin-top: 20px;
             flex-wrap: wrap;
@@ -171,11 +205,11 @@
         .action-btn {
             display: inline-flex;
             align-items: center;
-            padding: 14px 30px;
+            padding: 16px 35px; /* Increased padding */
             border-radius: 50px;
             text-decoration: none;
             font-weight: 600;
-            font-size: 18px;
+            font-size: 20px; /* Increased from 18px */
             transition: all 0.3s;
             box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
             cursor: pointer;
@@ -205,8 +239,8 @@
         }
         
         .action-btn i {
-            margin-right: 10px;
-            font-size: 20px;
+            margin-right: 12px; /* Increased from 10px */
+            font-size: 22px; /* Increased from 20px */
         }
         
         /* PDF Viewer Modal */
@@ -237,7 +271,7 @@
             right: 20px;
             top: 10px;
             color: #aaa;
-            font-size: 28px;
+            font-size: 32px; /* Increased from 28px */
             font-weight: bold;
             cursor: pointer;
             z-index: 1001;
@@ -257,7 +291,7 @@
         .download-instructions {
             background-color: #fff8e1;
             border-radius: 10px;
-            padding: 20px;
+            padding: 25px; /* Increased from 20px */
             margin: 20px auto;
             border-left: 5px solid #ffc107;
             max-width: 800px;
@@ -267,7 +301,7 @@
         .download-instructions h4 {
             color: #2c3e50;
             margin-bottom: 10px;
-            font-size: 20px;
+            font-size: 22px; /* Increased from 20px */
             display: flex;
             align-items: center;
             justify-content: center;
@@ -276,7 +310,7 @@
         
         .download-instructions p {
             color: #555;
-            font-size: 16px;
+            font-size: 18px; /* Increased from 16px */
             margin-bottom: 5px;
         }
         
@@ -291,7 +325,7 @@
         }
         
         .section-title {
-            font-size: 32px;
+            font-size: 36px; /* Increased from 32px */
             color: #2c3e50;
             text-align: center;
             margin-bottom: 50px;
@@ -333,20 +367,20 @@
         }
         
         .title-card i {
-            font-size: 40px;
+            font-size: 45px; /* Increased from 40px */
             color: #3498db;
             margin-bottom: 20px;
         }
         
         .title-card h3 {
-            font-size: 24px;
+            font-size: 26px; /* Increased from 24px */
             color: #2c3e50;
             margin-bottom: 15px;
         }
         
         .title-card p {
             color: #777;
-            font-size: 16px;
+            font-size: 18px; /* Increased from 16px */
         }
         
         /* Home Page Details */
@@ -364,7 +398,7 @@
         
         .home-detail-section h3 {
             color: #2c3e50;
-            font-size: 26px;
+            font-size: 28px; /* Increased from 26px */
             margin-bottom: 20px;
             display: flex;
             align-items: center;
@@ -378,6 +412,7 @@
         .home-detail-content {
             color: #555;
             line-height: 1.8;
+            font-size: 18px; /* Increased font size */
         }
         
         .home-detail-content p {
@@ -391,6 +426,7 @@
         
         .home-detail-content ul li {
             margin-bottom: 8px;
+            font-size: 18px; /* Increased font size */
         }
         
         .highlight {
@@ -409,9 +445,9 @@
         .skill-tag {
             background-color: #ecf0f1;
             color: #3498db;
-            padding: 8px 16px;
+            padding: 10px 18px; /* Increased padding */
             border-radius: 20px;
-            font-size: 16px;
+            font-size: 18px; /* Increased from 16px */
             font-weight: 600;
         }
         
@@ -437,14 +473,14 @@
         
         .contact-item-home i {
             color: #3498db;
-            font-size: 20px;
+            font-size: 22px; /* Increased from 20px */
             min-width: 30px;
             text-align: center;
         }
         
         .contact-item-home span, 
         .contact-item-home a {
-            font-size: 18px;
+            font-size: 20px; /* Increased from 18px */
             color: #555;
             word-break: break-all;
             text-decoration: none;
@@ -467,7 +503,7 @@
         .details-content h3 {
             color: #2c3e50;
             margin-bottom: 20px;
-            font-size: 26px;
+            font-size: 28px; /* Increased from 26px */
             border-bottom: 2px solid #f0f0f0;
             padding-bottom: 10px;
         }
@@ -476,6 +512,7 @@
             margin-bottom: 20px;
             line-height: 1.8;
             color: #555;
+            font-size: 18px; /* Increased font size */
         }
         
         .details-content ul {
@@ -486,6 +523,7 @@
         .details-content ul li {
             margin-bottom: 10px;
             color: #555;
+            font-size: 18px; /* Increased font size */
         }
         
         /* Education Page */
@@ -501,14 +539,14 @@
         
         .education-item h4 {
             color: #2c3e50;
-            font-size: 22px;
+            font-size: 24px; /* Increased from 22px */
             margin-bottom: 10px;
         }
         
         .education-item .institution {
             color: #3498db;
             font-weight: 600;
-            font-size: 18px;
+            font-size: 20px; /* Increased from 18px */
             margin-bottom: 5px;
         }
         
@@ -516,6 +554,7 @@
             color: #777;
             font-style: italic;
             margin-bottom: 15px;
+            font-size: 18px; /* Added font size */
         }
         
         /* Skills Page */
@@ -527,7 +566,7 @@
         
         .skill-category h4 {
             color: #2c3e50;
-            font-size: 22px;
+            font-size: 24px; /* Increased from 22px */
             margin-bottom: 20px;
             padding-bottom: 10px;
             border-bottom: 2px solid #f0f0f0;
@@ -543,9 +582,9 @@
         .skill-tag-item {
             background-color: #ecf0f1;
             color: #3498db;
-            padding: 8px 16px;
+            padding: 10px 18px; /* Increased padding */
             border-radius: 20px;
-            font-size: 16px;
+            font-size: 18px; /* Increased from 16px */
             font-weight: 600;
             margin-bottom: 8px;
             cursor: pointer;
@@ -562,7 +601,7 @@
         .skill-concept-box {
             background-color: white;
             border-radius: 10px;
-            padding: 20px;
+            padding: 25px; /* Increased from 20px */
             margin-top: 15px;
             box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
             border-left: 4px solid #3498db;
@@ -575,7 +614,7 @@
         
         .skill-concept-box h5 {
             color: #2c3e50;
-            font-size: 18px;
+            font-size: 20px; /* Increased from 18px */
             margin-bottom: 10px;
         }
         
@@ -588,9 +627,9 @@
         
         .concept-item {
             background-color: #f8f9fa;
-            padding: 12px;
+            padding: 14px; /* Increased from 12px */
             border-radius: 8px;
-            font-size: 14px;
+            font-size: 16px; /* Increased from 14px */
             text-align: center;
             border: 1px solid #e9ecef;
         }
@@ -626,13 +665,14 @@
         
         .project-content h4 {
             color: #2c3e50;
-            font-size: 22px;
+            font-size: 24px; /* Increased from 22px */
             margin-bottom: 10px;
         }
         
         .project-content p {
             color: #777;
             margin-bottom: 15px;
+            font-size: 18px; /* Increased font size */
         }
         
         .project-tech {
@@ -645,9 +685,9 @@
         .project-tech span {
             background-color: #ecf0f1;
             color: #3498db;
-            padding: 5px 12px;
+            padding: 6px 14px; /* Increased padding */
             border-radius: 20px;
-            font-size: 14px;
+            font-size: 16px; /* Increased from 14px */
             font-weight: 600;
         }
         
@@ -680,7 +720,7 @@
         }
         
         .contact-item i {
-            font-size: 28px;
+            font-size: 30px; /* Increased from 28px */
             color: #3498db;
             width: 60px;
             height: 60px;
@@ -695,13 +735,13 @@
         
         .contact-details h4 {
             color: #2c3e50;
-            font-size: 20px;
+            font-size: 22px; /* Increased from 20px */
             margin-bottom: 8px;
         }
         
         .contact-details p {
             color: #777;
-            font-size: 16px;
+            font-size: 18px; /* Increased from 16px */
             line-height: 1.6;
         }
         
@@ -726,7 +766,7 @@
         
         .contact-form h4 {
             color: #2c3e50;
-            font-size: 22px;
+            font-size: 24px; /* Increased from 22px */
             margin-bottom: 20px;
             text-align: center;
         }
@@ -740,15 +780,15 @@
             margin-bottom: 8px;
             color: #555;
             font-weight: 600;
-            font-size: 15px;
+            font-size: 17px; /* Increased from 15px */
         }
         
         .form-control {
             width: 100%;
-            padding: 12px 15px;
+            padding: 14px 17px; /* Increased padding */
             border: 1px solid #ddd;
             border-radius: 5px;
-            font-size: 16px;
+            font-size: 18px; /* Increased from 16px */
             transition: border-color 0.3s;
         }
         
@@ -762,10 +802,10 @@
             background-color: #3498db;
             color: white;
             border: none;
-            padding: 14px 30px;
+            padding: 16px 35px; /* Increased padding */
             border-radius: 5px;
             font-weight: 600;
-            font-size: 16px;
+            font-size: 18px; /* Increased from 16px */
             cursor: pointer;
             transition: background-color 0.3s;
             width: 100%;
@@ -777,7 +817,8 @@
         }
         
         .submit-btn i {
-            margin-right: 8px;
+            margin-right: 10px; /* Increased from 8px */
+            font-size: 18px;
         }
         
         /* Footer */
@@ -796,6 +837,7 @@
         .footer-content p {
             margin-bottom: 20px;
             color: #ecf0f1;
+            font-size: 18px; /* Increased font size */
         }
         
         .social-links {
@@ -807,9 +849,9 @@
         
         .social-links a {
             color: white;
-            font-size: 20px;
-            width: 40px;
-            height: 40px;
+            font-size: 22px; /* Increased from 20px */
+            width: 45px; /* Increased from 40px */
+            height: 45px; /* Increased from 40px */
             background-color: rgba(255, 255, 255, 0.1);
             border-radius: 50%;
             display: flex;
@@ -824,12 +866,31 @@
         
         .copyright {
             color: #bdc3c7;
-            font-size: 14px;
+            font-size: 16px; /* Increased from 14px */
             border-top: 1px solid rgba(255, 255, 255, 0.1);
             padding-top: 20px;
         }
         
         /* Responsive Styles */
+        @media (max-width: 992px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .profile-section {
+                margin-bottom: 30px;
+            }
+            
+            .hero-text {
+                text-align: center;
+            }
+            
+            .button-container {
+                justify-content: center;
+            }
+        }
+        
         @media (max-width: 768px) {
             .header-container {
                 flex-direction: column;
@@ -838,6 +899,7 @@
             
             .logo {
                 margin-bottom: 15px;
+                font-size: 26px; /* Adjusted for mobile */
             }
             
             nav ul {
@@ -849,15 +911,15 @@
             }
             
             .hero h1 {
-                font-size: 32px;
+                font-size: 36px; /* Adjusted for mobile */
             }
             
             .hero h2 {
-                font-size: 20px;
+                font-size: 22px; /* Adjusted for mobile */
             }
             
             .section-title {
-                font-size: 28px;
+                font-size: 30px; /* Adjusted for mobile */
             }
             
             .home-titles {
@@ -882,13 +944,13 @@
             }
             
             .profile-photo {
-                width: 200px;
-                height: 200px;
+                width: 250px; /* Adjusted for mobile */
+                height: 250px; /* Adjusted for mobile */
             }
             
             .profile-photo-rectangle {
-                width: 200px;
-                height: 250px;
+                width: 220px; /* Adjusted for mobile */
+                height: 280px; /* Adjusted for mobile */
             }
             
             .contact-item {
@@ -941,13 +1003,13 @@
             }
             
             .profile-photo {
-                width: 180px;
-                height: 180px;
+                width: 220px; /* Adjusted for mobile */
+                height: 220px; /* Adjusted for mobile */
             }
             
             .profile-photo-rectangle {
-                width: 180px;
-                height: 230px;
+                width: 200px; /* Adjusted for mobile */
+                height: 250px; /* Adjusted for mobile */
             }
         }
     </style>
@@ -984,32 +1046,40 @@
     <section id="home" class="section active">
         <div class="hero">
             <div class="container hero-content">
-                <!-- Your Profile Photo - ROUNDED STYLE -->
-                <img src="portfolio_1.jpg" 
-                     alt="NIHITHA GOWRISANKAR Profile Photo" 
-                     class="profile-photo">
+                <!-- Profile Section on Left -->
+                <div class="profile-section">
+                    <!-- Your Profile Photo - ROUNDED STYLE -->
+                    <img src="portfolio_1.jpg" 
+                         alt="NIHITHA GOWRISANKAR Profile Photo" 
+                         class="profile-photo">
+                    
+                    <!-- Alternative: Rectangle Style (Uncomment to use) -->
+                    <!--
+                    <img src="portfolio_photo.jpg" 
+                         alt="NIHITHA GOWRISANKAR Profile Photo" 
+                         class="profile-photo-rectangle">
+                    -->
+                </div>
                 
-                <!-- Alternative: Rectangle Style (Uncomment to use) -->
-                <!--
-                <img src="portfolio_photo.jpg" 
-                     alt="NIHITHA GOWRISANKAR Profile Photo" 
-                     class="profile-photo-rectangle">
-                -->
-                
-                <h1>NIHITHA GOWRISANKAR</h1>
-                <h2>Electronics and Instrumentation Engineer</h2>
-                <p>Seeking a dynamic role to apply my skills and knowledge while contributing to organizational growth and gaining valuable experience for professional development.</p>
-                
-
-                
-                <!-- Download and View Buttons -->
-                <div class="button-container">
-                    <a href="resume.1.pdf" download="Nihitha_Gowrisankar_Resume.pdf" class="action-btn download-btn" id="download-resume-btn">
-                        <i class="fas fa-download"></i> Download Resume
-                    </a>
-                    <a href="#" class="action-btn view-btn" id="view-resume-btn">
-                        <i class="fas fa-eye"></i> View Resume
-                    </a>
+                <!-- Hero Text on Right -->
+                <div class="hero-text">
+                    <h1>NIHITHA GOWRISANKAR</h1>
+                    <h2>Electronics and Instrumentation Engineer</h2>
+                    <!-- Career Objectives Box -->
+                    <div class="career-objectives">
+                        <h3><i class="fas fa-bullseye"></i> Career Objectives</h3>
+                        <p>To secure a challenging position in a reputable organization where I can utilize my technical skills in Electronics and Instrumentation Engineering. I aim to contribute to innovative projects, enhance my professional capabilities, and grow with the organization while achieving personal and career goals.</p>
+                    </div>
+                    
+                    <!-- Download and View Buttons -->
+                    <div class="button-container">
+                        <a href="resume.1.pdf" download="Nihitha_Gowrisankar_Resume.pdf" class="action-btn download-btn" id="download-resume-btn">
+                            <i class="fas fa-download"></i> Download Resume
+                        </a>
+                        <a href="#" class="action-btn view-btn" id="view-resume-btn">
+                            <i class="fas fa-eye"></i> View Resume
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1485,7 +1555,7 @@
                 
                 <div class="project-grid">
                     <div class="project-card">
-                        <div style="background-color: #3498db; height: 200px; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; font-weight: bold;">IDEA<span style="color:#2ecc71;">THON</span></div>
+                        <div style="background-color: #3498db; height: 200px; display: flex; align-items: center; justify-content: center; color: white; font-size: 28px; font-weight: bold;">IDEA<span style="color:#2ecc71;">THON</span></div>
                         <div class="project-content">
                             <h4>Eco-Friendly Design Project</h4>
                             <p>Participated in an Ideathon competition and designed an innovative eco-friendly solution for sustainable living. Developed a proof of concept that won 2nd prize in the competition.</p>
@@ -1498,7 +1568,7 @@
                     </div>
                     
                     <div class="project-card">
-                        <div style="background-color: #2ecc71; height: 200px; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; font-weight: bold;">INDUSTRIAL TRAINING</div>
+                        <div style="background-color: #2ecc71; height: 200px; display: flex; align-items: center; justify-content: center; color: white; font-size: 28px; font-weight: bold;">INDUSTRIAL TRAINING</div>
                         <div class="project-content">
                             <h4>Implant Training at Agni Steels</h4>
                             <p>Completed industrial training from July 12-17, 2024. Learned about steel manufacturing processes, industrial instrumentation, quality control, and production workflow in industrial settings.</p>
@@ -1512,7 +1582,7 @@
                     </div>
                     
                     <div class="project-card">
-                        <div style="background-color: #9b59b6; height: 200px; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; font-weight: bold;">PAPER PRESENTATION</div>
+                        <div style="background-color: #9b59b6; height: 200px; display: flex; align-items: center; justify-content: center; color: white; font-size: 28px; font-weight: bold;">PAPER PRESENTATION</div>
                         <div class="project-content">
                             <h4>Technical Paper Presentation</h4>
                             <p>Won 1st prize in paper presentation at Sri Ramakrishna Engineering College, Coimbatore. Presented research on emerging trends in electronics and instrumentation engineering.</p>
@@ -1590,7 +1660,7 @@
                             <div class="contact-details">
                                 <h4>Email Address</h4>
                                 <p><a href="mailto:nihithagowrisankar@gmail.com">nihithagowrisankar@gmail.com</a></p>
-                                <p style="margin-top: 5px; font-size: 14px;">For job opportunities, collaborations, and professional inquiries</p>
+                                <p style="margin-top: 5px; font-size: 16px;">For job opportunities, collaborations, and professional inquiries</p>
                             </div>
                         </div>
                         
@@ -1599,7 +1669,6 @@
                             <div class="contact-details">
                                 <h4>Phone Number</h4>
                                 <p><a href="tel:6382446405">+91 6382446405</a></p>
-                                <p style="margin-top: 5px; font-size: 14px;"></p>
                             </div>
                         </div>
                         
@@ -1608,7 +1677,7 @@
                             <div class="contact-details">
                                 <h4>LinkedIn Profile</h4>
                                 <p><a href="https://www.linkedin.com/in/nihitha-gowrishankar-023447326" target="_blank">www.linkedin.com/in/nihitha-gowrishankar-023447326</a></p>
-                                <p style="margin-top: 5px; font-size: 14px;">Professional network and work experience</p>
+                                <p style="margin-top: 5px; font-size: 16px;">Professional network and work experience</p>
                             </div>
                         </div>
                         
@@ -1617,7 +1686,7 @@
                             <div class="contact-details">
                                 <h4>GitHub Profile</h4>
                                 <p><a href="https://github.com/NihithaGowrisankar" target="_blank">www.github.com/NihithaGowrisankar</a></p>
-                                <p style="margin-top: 5px; font-size: 14px;">Technical projects and coding samples</p>
+                                <p style="margin-top: 5px; font-size: 16px;">Technical projects and coding samples</p>
                             </div>
                         </div>
                         
@@ -1626,7 +1695,7 @@
                             <div class="contact-details">
                                 <h4>Current Location</h4>
                                 <p>Erode, Tamil Nadu, India</p>
-                                <p style="margin-top: 5px; font-size: 14px;">Willing to relocate based on opportunity</p>
+                                <p style="margin-top: 5px; font-size: 16px;">Willing to relocate based on opportunity</p>
                             </div>
                         </div>
                     </div>
